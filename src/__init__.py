@@ -1,6 +1,6 @@
 import imp
 from flask import Flask, render_template
-from .controllers.home import home
+from .controller import app as routes
 from datetime import datetime
 
 
@@ -36,7 +36,7 @@ def create_app():
         return date_time.strftime("%d")
 
     # Registring blueprints
-    app.register_blueprint(home)
+    app.register_blueprint(routes)
     
     # Error Handlers
     def bad_request(e):

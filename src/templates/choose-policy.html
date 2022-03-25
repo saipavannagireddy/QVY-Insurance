@@ -1,0 +1,50 @@
+{% extends "base.html" %} 
+
+{% block content %}
+
+<div class="container mt-5" style="width: 33%;">
+    <div class="card">
+        <article class="card-body">
+        <h4 class="card-title mb-4 mt-1">Choose Policy</h4>
+             <form method="post">
+            <div class="form-group">
+                <label>Policy Type</label>
+                <select>
+                    <option value="genins">Gen. Ins.</option>
+                    <option value="healthins">Health Ins.</option>
+                    <option value="motorins">Motor Ins.</option>
+                </select>
+            </div> <!-- form-group// -->
+            <div class="form-group">
+                <label>Policy Title</label>
+                <select>
+                    <option value="janand">Janand</option>
+                    <option value="bgold">BimaGold</option>
+                    <option value="vridi">Vridhidhi</option>
+                </select>
+            </div> <!-- form-group// -->
+            <div class="form-group">
+                <label for="ctNum">Sum Assured(Rs)*</label>
+                <input type="number" class="form-control" id="ctNum" placeholder="XXXXX XXXXX" required>
+            </div> <!-- form-group// -->
+            <div class="form-group">
+                <label for="ctNum2">Premium Amount(Rs)*</label>
+                <input type="number" class="form-control" id="ctNum2" placeholder="XXXXX XXXXX" required>
+            </div> <!-- form-group// -->
+            <div class="form-group">
+                <label>Policy Term (Yrs)*</label>
+                <select>
+                    <option value="1">1 Year</option>
+                    <option value="2">2 Years</option>
+                    <option value="3">3 Years</option>
+                </select>
+            </div> <!-- form-group// -->
+            <div class="form-group">
+                <button type="submit" class="btn btn-warning btn-block"> Select Policy  </button>
+            </div> <!-- form-group// -->                                                           
+        </form>
+        </article>
+        </div> <!-- card.// -->
+</div>
+
+{% endblock content%}

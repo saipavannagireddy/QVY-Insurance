@@ -1,0 +1,28 @@
+{% extends "base.html" %} 
+
+{% block content %}
+
+<div class="container mt-5" style="width: 33%;">
+    <div class="card">
+        <article class="card-body">
+        <a href="/login" class="float-right btn btn-outline-primary">Customer Login</a>
+        <h4 class="card-title mb-4 mt-1 text-success">Customer Registration Successful</h4>
+        <table>
+            <tr>
+                <td class="pr-3">Customer ID: </td>
+                <td><b>{{ id }}</b></td>
+            </tr>
+            <tr>
+                <td class="pr-3">Customer Name: </td>
+                <td><b>{{ name }}</b></td>
+            </tr>
+            <tr>
+                <td class="pr-3">Customer Email: </td>
+                <td><b>{{ email }}</b></td>
+            </tr>
+        </table>
+        </article>
+        </div> <!-- card.// -->
+</div>
+
+{% endblock content%}

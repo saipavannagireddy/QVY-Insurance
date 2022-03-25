@@ -1,0 +1,53 @@
+{% extends "base.html" %} 
+
+{% block content %}
+
+<div class="container mt-5" style="width: 33%;">
+    <div class="card">
+        <article class="card-body">
+        <a href="/login" class="float-right btn btn-outline-primary">Customer Login</a>
+        <h4 class="card-title mb-4 mt-1">Customer Registration</h4>
+            <form method="post">
+                <div class="form-group">
+                    <label>Username/Customer ID*</label>
+                    <input name="cid" class="form-control" placeholder="Customer ID" value="1000001" type="text" readonly required>
+                </div> <!-- form-group// -->
+                <div class="form-group">
+                    <label>Name*</label>
+                    <input name="name" class="form-control" placeholder="Customer Name" type="text" required>
+                </div> <!-- form-group// -->
+                <div class="form-group">
+                    <label>Email*</label>
+                    <input name="email" class="form-control" placeholder="Customer Email" type="email" required>
+                </div> <!-- form-group// -->
+                <div class="form-group">
+                    <label>password*</label>
+                    <input class="form-control" placeholder="******" type="password" required>
+                </div> <!-- form-group// --> 
+                <div class="form-group">
+                    <label for="AddrTextArea">Address*</label>
+                    <textarea class="form-control" id="AddrTextArea" rows="3"></textarea>
+                </div> <!-- form-group// -->
+                <div class="form-group">
+                    <label for="ctNum">Contact Number*</label>
+                    <input type="tel" class="form-control" id="ctNum" placeholder="+91-XXXXX XXXXX" required>
+                </div> <!-- form-group// -->
+                <div class="form-group">
+                    <label for="NomName">Nominee Name*</label>
+                    <input type="text" class="form-control" id="NomName" placeholder="" required>
+                </div> <!-- form-group// -->
+                <div class="form-group">
+                    <label for="NomRel">Nominee Relationship*</label>
+                    <input type="text" class="form-control" id="NomRel" placeholder="" required>
+                </div> <!-- form-group// -->
+                <div class="form-group"> 
+                </div> <!-- form-group// -->  
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success btn-block"> Register </button>
+                </div> <!-- form-group// -->                                                           
+        </form>
+        </article>
+        </div> <!-- card.// -->
+</div>
+
+{% endblock content%}
