@@ -1,6 +1,8 @@
 
+
 # QVY-Insurance
 QVY-Insurance Web App TCS Case Study
+
 
 # Project Setup
 
@@ -23,3 +25,12 @@ QVY-Insurance Web App TCS Case Study
     set FLASK_APP=src
     set FLASK_ENV=development
     flask run
+
+# App Usage
+Go to http://127.0.0.1:5000/ (Address & Port may vary. Please check console after flask run command)
+## Available Routes
+/ - Home Page
+/login - Login Page
+/register - Customer Registration Page
+/home - Customer Home page
+/choose-policy - Choose Policy Page
