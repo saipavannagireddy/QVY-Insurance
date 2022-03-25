@@ -15,8 +15,9 @@ QVY-Insurance Web App TCS Case Study
     virtualenv venv
     code .
     
-    # Enter the following commands in VS Code Terminal
-    venv/Scripts/activate
+    # Enter the following commands in VS Code Terminal (CMD)
+    # To see VS Code Terminal Hit (Ctrl + `) and Choose Command Prompt from dropdown
+    venv\Scripts\activate
     pip install -r requirements.txt
     
 # Run App
