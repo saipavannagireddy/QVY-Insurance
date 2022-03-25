@@ -12,7 +12,7 @@ QVY-Insurance Web App TCS Case Study
     git clone https://github.com/saipavannagireddy/QVY-Insurance.git
     cd QVY-Insurance
     pip install virtualenv
-    virtuealenv venv
+    virtualenv venv
     code .
     
     # Enter the following commands in VS Code Terminal
